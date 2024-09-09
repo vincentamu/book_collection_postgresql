@@ -18,4 +18,5 @@ production:
   <<: *default
   database: your_database_name_production
   username: your_production_username
+  url: <%= ENV['DATABASE_URL'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
