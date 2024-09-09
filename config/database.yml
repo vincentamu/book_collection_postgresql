@@ -84,7 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: book_collection_postgresql_production
-  username: book_collection_postgresql
   url: <%= ENV['DATABASE_URL'] %>
-  password: <%= ENV["BOOK_COLLECTION_POSTGRESQL_DATABASE_PASSWORD"] %>
